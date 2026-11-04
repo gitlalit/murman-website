@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Murman Engineering</title>
+<meta name="description" content="Murman Engineering helps real estate developers in Maharashtra earn green FSI, clear environmental compliance, build with low-carbon materials, check site quality with AI and access green finance.">
+<meta property="og:title" content="Murman Engineering India Pvt Ltd">
+<meta property="og:description" content="Build green. Prove it. Get paid for it. Green FSI, compliance, AI site quality and green finance for real estate in Maharashtra.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.murmanengineering.com/">
+<link rel="canonical" href="https://www.murmanengineering.com/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Murman Engineering India Pvt Ltd, home">
+      <svg viewBox="0 0 97 118" aria-hidden="true"><path d="M96.23 .14V18.07L48.89 45.21 17.07 27.61V80.94C27.2 87.47 38.11 92.98 48.5 99.17L96.23 72.32V90.25L48.5 117.32 2.47 91.34.77 89.79V.14L48.5 26.98Z"/><path d="M96.23 36.46V54.63L48.27 81.17V63.71Z"/></svg>
+      <span><b>MURMAN</b><small>ENGINEERING INDIA PVT LTD</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="site-nav">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#ai">How AI helps</a></li>
+        <li><a href="#who">Who we help</a></li>
+        <li><a href="#record">Track record</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-tan" href="#meet">Book a meeting</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <h1><span class="l">Build green.</span> <span class="l">Prove it.</span> <span class="l pay">Get paid for it.</span></h1>
+    <p class="hero-lead">Murman turns Maharashtra's green building rules into extra sellable area, faster approvals, better site quality and cheaper finance for real estate developers. AI handles the paperwork and the site checks. Engineers with 35 years on Maharashtra sites make the calls.</p>
+    <div class="hero-actions">
+      <a class="btn btn-navy" href="#meet">Book a 30-minute meeting</a>
+      <a class="btn btn-line" href="https://wa.me/917977188789?text=Hello%20Murman%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp +91 79771 88789</a>
+    </div>
+
+    <form class="statement" id="statement" aria-labelledby="st-title" onsubmit="return false">
+      <div class="statement-head">
+        <h2 id="st-title">Area statement: what green FSI adds to your plot</h2>
+        <p>Change the white cells. The highlighted rows update.</p>
+      </div>
+      <table class="st-table">
+        <thead><tr><th scope="col">No.</th><th scope="col">Description</th><th scope="col" style="text-align:right">Value</th><th scope="col">Unit</th></tr></thead>
+        <tbody>
+          <tr><td class="no">1</td><td class="desc"><label for="st-plot">Plot area</label></td><td class="val"><input id="st-plot" type="number" min="0" step="100" value="10000" inputmode="decimal"></td><td class="unit">sqm</td></tr>
+          <tr><td class="no">2</td><td class="desc"><label for="st-fsi">Basic FSI permissible</label></td><td class="val"><input id="st-fsi" type="number" min="0" step="0.05" value="1.1" inputmode="decimal"></td><td class="unit">ratio</td></tr>
+          <tr><td class="no">3</td><td class="desc">Basic built-up area<span class="formula">Item 1 × item 2</span></td><td class="val"><span id="st-bua">11,000</span></td><td class="unit">sqm</td></tr>
+          <tr><td class="no">4</td><td class="desc"><label for="st-rating">Green rating you pre-certify</label></td><td class="val"><select id="st-rating"><option value="3">Silver, 3%</option><option value="5" selected>Gold, 5%</option><option value="7">Platinum, 7%</option></select></td><td class="unit">IGBC / GRIHA</td></tr>
+          <tr class="gain" id="row-gain"><td class="no">5</td><td class="desc">Additional FSI for green building, UDCPR<span class="formula"><span id="st-pct">5</span>% of item 3 · <span id="st-extra-sqft">5,920 sq ft</span></span></td><td class="val"><span id="st-extra">550</span></td><td class="unit">sqm</td></tr>
+          <tr><td class="no">6</td><td class="desc"><label for="st-rate">Your sale rate</label></td><td class="val"><input id="st-rate" type="number" min="0" step="500" value="10000" inputmode="decimal"></td><td class="unit">₹ per sq ft</td></tr>
+          <tr class="total" id="row-total"><td class="no">7</td><td class="desc">Indicative sale value of item 5<span class="formula">Item 5 in sq ft × item 6</span></td><td class="val"><span id="st-value">₹5.92 cr</span></td><td class="unit">before costs</td></tr>
+        </tbody>
+      </table>
+      <div class="statement-foot">
+        <p>Indicative only. The bonus depends on your plot, the planning authority, the rating you pre-certify and the rating you finally achieve. We confirm the figure for your plot in the first meeting, free.</p>
+        <a class="btn btn-navy" href="#meet">Confirm it for my plot</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="sec" id="services" style="padding-top:var(--s7)">
+  <div class="wrap">
+    <div class="sec-intro">
+      <h2>Six services, from sanction to payback</h2>
+      <p>Each one stands alone, so you can start with a single service. Together they take a project from the first drawing to the final certificate and the loan that funds it. Open any row for the detail.</p>
+    </div>
+
+    <div class="schedule">
+      <div class="stage">
+        <div class="stage-name"><b>Plan</b><span>Before sanction</span></div>
+        <div>
+          <details class="svc">
+            <summary>
+              <div class="svc-name"><b>Murman YIELD</b><span>Green FSI gain</span></div>
+              <div class="svc-what">We plan your green rating so you earn the UDCPR bonus floor area, and keep it safe until the occupation certificate.<em>3 to 7% more built-up area on the same plot.</em></div>
+              <span class="status ready">Ready now</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="svc-more"><ul><li>Rating strategy: IGBC or GRIHA, silver to platinum, matched to cost and sales plan</li><li>Pre-certification file and the FSI working for your sanction drawings</li><li>Tracking to final certification, so the bonus area is never at risk</li></ul></div>
+          </details>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-name"><b>Build</b><span>On site</span></div>
+        <div>
+          <details class="svc">
+            <summary>
+              <div class="svc-name"><b>Murman SIGHT</b><span>AI site quality</span></div>
+              <div class="svc-what">Site teams take phone photos. Our AI checks them against your specifications and turns them into a daily quality report with snags, owners and dates.<em>Fewer reworks and handover complaints, and quality you can show.</em></div>
+              <span class="status pilot">Pilot running</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="svc-more"><ul><li>Tiling, stone, waterproofing, plaster and finishing checks, written by people who have laid them for 35 years</li><li>Snag lists with photo proof, contractor assignment and closure tracking</li><li>The evidence trail your green rating, handover and buyers need</li></ul></div>
+          </details>
+          <details class="svc">
+            <summary>
+              <div class="svc-name"><b>Murman MIX</b><span>Low-carbon materials</span></div>
+              <div class="svc-what">We price your BOQ in rupees and in carbon, then swap in proven lower-carbon options that cost the same or less.<em>Lower embodied carbon, often at lower cost.</em></div>
+              <span class="status ready">Ready now</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="svc-more"><ul><li>Carbon-costed BOQ for the whole project</li><li>LC3, PSC and GGBS concrete options, and recycled C&amp;D content toward the 2026 targets</li><li>Supplier sourcing and on-site execution support</li></ul></div>
+          </details>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-name"><b>Prove</b><span>To regulators and buyers</span></div>
+        <div>
+          <details class="svc">
+            <summary>
+              <div class="svc-name"><b>Murman ASSURE</b><span>Clearance and compliance</span></div>
+              <div class="svc-what">One desk for the environmental paperwork every large project must keep up with, from application to completion.<em>No missed filings and no surprises at inspection.</em></div>
+              <span class="status ready">Ready now</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="svc-more"><ul><li>Environmental clearance for projects of 20,000 sqm and above, with accredited partners</li><li>Six-monthly compliance reports</li><li>C&amp;D Waste Rules 2025 plans and records, and readiness for environment audits</li></ul></div>
+          </details>
+          <details class="svc">
+            <summary>
+              <div class="svc-name"><b>Murman TRUE</b><span>Green claims check</span></div>
+              <div class="svc-what">Before a brochure, hoarding or ad goes out, we check every green claim against the evidence and the CCPA greenwashing guidelines.<em>Green marketing that holds up if anyone asks.</em></div>
+              <span class="status ready">Ready now</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="svc-more"><ul><li>Review of brochures, websites, ads and site boards</li><li>An evidence file behind every claim</li><li>Plain wording fixes your sales team can use</li></ul></div>
+          </details>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-name"><b>Earn</b><span>From lenders</span></div>
+        <div>
+          <details class="svc">
+            <summary>
+              <div class="svc-name"><b>Murman CAPITAL</b><span>Green finance ready</span></div>
+              <div class="svc-what">Banks and NBFCs want proof before they offer green terms. We package your project's evidence the way lenders ask for it.<em>Access to green loan terms for the project and its buyers.</em></div>
+              <span class="status pilot">Pilot</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="svc-more"><ul><li>Lender evidence pack for green construction finance</li><li>Support for buyers' green home loans</li><li>Data ready for green bonds and loan reporting</li></ul></div>
+          </details>
+        </div>
+      </div>
+    </div>
+    <p class="next-line"><span>Coming next:</span><span><b>Murman LEDGER</b>, investor and GRESB data for projects with institutional investors</span><span><b>Murman ROOTS</b>, nature and biodiversity, built on the carbon data</span></p>
+  </div>
+</section>
+
+<section class="sec band" id="ai">
+  <div class="wrap ai">
+    <div>
+      <div class="sec-intro" style="margin-bottom:0">
+        <h2>AI does the paperwork. Engineers make the calls.</h2>
+        <p>Construction runs on documents, photos and checklists. Most of that work is slow and repetitive, which is what AI does well. An engineer checks and signs every output before it reaches you.</p>
+      </div>
+      <ol class="ai-flow">
+        <li><b>Reads</b><p>Rules, drawings, area statements and BOQs. <span>The FSI working and the clearance file start in hours, not weeks.</span></p></li>
+        <li><b>Watches</b><p>Site photos from your team's phones. <span>Quality issues are flagged the same day, floor by floor.</span></p></li>
+        <li><b>Writes</b><p>Compliance reports, quality reports, lender packs. <span>Your team spends its time on site, not on formats.</span></p></li>
+        <li><b>Engineer</b><p>Reviews, decides and signs. <span>35 years of finishing and civil work behind every judgement call.</span></p></li>
+      </ol>
+    </div>
+    <figure class="report" aria-label="Example of a Murman SIGHT daily quality report" style="margin:0">
+      <div class="report-head"><b>Daily quality report</b><span>Example · Tower B, level 7</span></div>
+      <div class="report-scroll">
+        <table>
+          <thead><tr><th scope="col">Location</th><th scope="col">Check</th><th scope="col">Finding</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            <tr><td>Flat 704, living</td><td>Floor tile lippage</td><td>1.8 mm against 1 mm spec</td><td><span class="tag bad">Rework</span></td></tr>
+            <tr><td>Flat 704, living</td><td>Tap test</td><td>3 hollow tiles near door</td><td><span class="tag bad">Rework</span></td></tr>
+            <tr><td>Flat 705, toilet</td><td>Waterproofing upturn</td><td>150 mm, photographed before tiling</td><td><span class="tag ok">Pass</span></td></tr>
+            <tr><td>Flat 706, kitchen</td><td>Joint width</td><td>2 mm uniform, grout pending</td><td><span class="tag warn">Follow up</span></td></tr>
+            <tr><td>Lobby</td><td>Stone slope to drain</td><td>1 in 100, as drawn</td><td><span class="tag ok">Pass</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figcaption class="report-foot"><span>14 photos · 5 checks · 2 snags assigned to the tiling contractor</span><span>Reviewed by site engineer</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="who">
+  <div class="wrap">
+    <div class="sec-intro">
+      <h2>One set of evidence, three kinds of client</h2>
+      <p>The same project data serves the developer, the lender and the project manager. We collect it once and shape it for each of them.</p>
+    </div>
+    <div class="audiences">
+      <div>
+        <h3>More area, fewer delays</h3>
+        <p class="who">Developers</p>
+        <p>Residential, commercial, data centre and institutional projects across Mumbai, Thane, Navi Mumbai and Pune.</p>
+        <ul><li>Extra FSI from your green rating</li><li>Clearances and compliance handled</li><li>Site quality you can show buyers</li></ul>
+      </div>
+      <div>
+        <h3>Green loans you can trust</h3>
+        <p class="who">Banks, NBFCs and investors</p>
+        <p>Lenders building green loan books need projects with real, checkable evidence.</p>
+        <ul><li>Verified project evidence in one pack</li><li>A pipeline of green-ready projects</li><li>Data for your climate reporting</li></ul>
+      </div>
+      <div>
+        <h3>A specialist partner on site</h3>
+        <p class="who">PMCs and contractors</p>
+        <p>Add green, compliance and AI quality checks to your scope without hiring a new team.</p>
+        <ul><li>Quality reports in your format</li><li>Low-carbon material options and execution</li><li>White-label support for your clients</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="record" style="padding-top:0">
+  <div class="wrap">
+    <div class="record-top">
+      <div class="sec-intro">
+        <h2>Since 1991, 55+ buildings delivered</h2>
+        <p>Murman carries forward the execution record of its founding team: civil, interiors, flooring and finishing work on hospitals, data centres, schools, offices, homes and government buildings, with 500+ people on our sites.</p>
+      </div>
+      <ol class="timeline" aria-label="Company history">
+        <li><b>1991</b><p>Murarilal Kumawat starts in construction in Mumbai.</p></li>
+        <li><b>2001</b><p>LM Associates is founded, later renamed Lalit Enterprises.</p></li>
+        <li><b>2001 to 2025</b><p>55+ projects in Maharashtra, Madhya Pradesh and Bengaluru.</p></li>
+        <li><b>2025</b><p>Murman Engineering India Pvt Ltd adds green building, compliance and AI.</p></li>
+      </ol>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter projects by sector">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="data" aria-pressed="false">Data centres</button>
+      <button type="button" data-f="health" aria-pressed="false">Healthcare</button>
+      <button type="button" data-f="commercial" aria-pressed="false">Commercial</button>
+      <button type="button" data-f="residential" aria-pressed="false">Residential</button>
+      <button type="button" data-f="education" aria-pressed="false">Education</button>
+      <button type="button" data-f="government" aria-pressed="false">Government</button>
+      <button type="button" data-f="industrial" aria-pressed="false">Industrial</button>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure data-sector="data"><img src="img/sify.jpg" alt="Sify Data Centre, Rabale" width="344" height="242" loading="lazy"><figcaption><b>Sify Data Centre</b>Rabale, Navi Mumbai</figcaption></figure>
+      <figure data-sector="data"><img src="img/ctrls.jpg" alt="CtrlS Data Centre, Mahape" width="358" height="239" loading="lazy"><figcaption><b>CtrlS Data Centre</b>Mahape, Navi Mumbai</figcaption></figure>
+      <figure data-sector="health"><img src="img/hncii-hospital.jpg" alt="HNCII Hospital, Dockyard, Mumbai" width="323" height="827" loading="lazy"><figcaption><b>HNCII Hospital</b>Dockyard, Mumbai</figcaption></figure>
+      <figure data-sector="health"><img src="img/hedgewar-hospital.jpg" alt="Dr. Hedgewar Hospital, Aurangabad" width="322" height="400" loading="lazy"><figcaption><b>Dr. Hedgewar Hospital</b>Aurangabad</figcaption></figure>
+      <figure data-sector="commercial"><img src="img/kesar-solitaire.jpg" alt="Kesar Solitaire, Vashi" width="386" height="980" loading="lazy"><figcaption><b>Kesar Solitaire</b>Vashi, Navi Mumbai</figcaption></figure>
+      <figure data-sector="residential"><img src="img/puranik-grand-central.jpg" alt="Puranik Grand Central, Thane" width="375" height="466" loading="lazy"><figcaption><b>Puranik Grand Central</b>Thane</figcaption></figure>
+      <figure data-sector="residential"><img src="img/triveni-laurel.jpg" alt="Triveni Laurel, Kalyan West" width="411" height="512" loading="lazy"><figcaption><b>Triveni Laurel</b>Kalyan West</figcaption></figure>
+      <figure data-sector="education"><img src="img/bp-marine.jpg" alt="BP Marine College, Panvel" width="903" height="370" loading="lazy"><figcaption><b>BP Marine College</b>Panvel</figcaption></figure>
+      <figure data-sector="education"><img src="img/tilak-school.jpg" alt="Tilak Public School, Nerul" width="332" height="272" loading="lazy"><figcaption><b>Tilak Public School</b>Nerul, Navi Mumbai</figcaption></figure>
+      <figure data-sector="government"><img src="img/gmc-khandwa.jpg" alt="Government Medical College, Khandwa" width="807" height="372" loading="lazy"><figcaption><b>Government Medical College</b>Khandwa, Madhya Pradesh</figcaption></figure>
+      <figure data-sector="government"><img src="img/nizampur-police-quarters.jpg" alt="Police station and 118 quarters, Nizampur, Bhiwandi" width="485" height="453" loading="lazy"><figcaption><b>Police station and 118 quarters</b>Nizampur, Bhiwandi</figcaption></figure>
+      <figure data-sector="industrial"><img src="img/elaf-cold-storage.jpg" alt="ELAF Cold Storage, Panvel" width="332" height="272" loading="lazy"><figcaption><b>ELAF Cold Storage</b>Panvel</figcaption></figure>
+    </div>
+
+    <div class="clients">
+      <div class="gov"><h3>Government clients</h3><img src="img/logos-gov.jpg" alt="Mumbai Police, Government of Madhya Pradesh, Bharat Electronics" loading="lazy" width="1530" height="295"></div>
+      <div class="ind"><h3>Industry clients and collaborators</h3><img src="img/logos-industry.jpg" alt="Generic Engineering, Puraniks, Triveni, Gannon Dunkerley, Reliable Group, CtrlS, Kesar Group, BP Marine Academy, Aarti Industries, Toyota, BMW, Tilak Education Society, S.K. Wheels, Himadri, Avi Worldwide, Raulimex, Glenmark, Master and Associates, AND Designs, Sify, Aadi Properties, Club Mahindra, Patel Group, Sitec Labs" loading="lazy" width="1590" height="1345"></div>
+    </div>
+    <p class="fine">Projects and clients from the execution work of Lalit Enterprises (formerly LM Associates), led by Murarilal Kumawat. Names and logos belong to their owners. Some images are developer renderings.</p>
+  </div>
+</section>
+
+<section class="sec" id="team" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-intro"><h2>Site experience, regulation and technology</h2></div>
+    <div class="team">
+      <article class="person">
+        <div class="shield" aria-hidden="true">MK</div>
+        <div>
+          <h3>Murarilal Kumawat</h3>
+          <p class="role">Managing Director, execution</p>
+          <p>Thirty-five years on Maharashtra sites. Has led 55+ projects through Lalit Enterprises, from shell and core to flooring, stone, tiling and turnkey interiors.</p>
+          <ul><li>Hospitals, data centres, schools, offices, homes and government buildings</li><li>Material and labour management at scale</li><li>The final word on what works on site</li></ul>
+        </div>
+      </article>
+      <article class="person">
+        <div class="shield" aria-hidden="true">LK</div>
+        <div>
+          <h3>Lalit Kumar Kumawat</h3>
+          <p class="role">Co-founder, strategy and technology</p>
+          <p>B.Tech and MBA. Works across building regulation, ESG, green building ratings and applied AI, and designs the tools behind Murman's services.</p>
+          <ul><li>Green FSI, environmental clearance and C&amp;D rules</li><li>ESG reporting and green finance</li><li>AI for documents and site quality</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="meet" style="padding-top:0">
+  <div class="wrap meet">
+    <div>
+      <div class="sec-intro" style="margin-bottom:0">
+        <h2>Start with one plot</h2>
+        <p>Tell us about your project. We reply within one working day to fix a time at your office, on site or online.</p>
+      </div>
+      <ol class="steps">
+        <li><div><b>Meet</b><p>A 30-minute call or site visit to understand the project and its stage.</p></div></li>
+        <li><div><b>Free FSI scan</b><p>We confirm the green FSI for one plot and the rating path to get it.</p></div></li>
+        <li><div><b>Pilot</b><p>Run one service, often YIELD or SIGHT, on one tower or phase.</p></div></li>
+        <li><div><b>Roll out</b><p>Extend to more towers and projects once the results are clear.</p></div></li>
+      </ol>
+      <div class="contact">
+        <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>+91 79771 88789</span><button type="button" class="copy" data-copy="+91 7977188789">Copy</button></div>
+        <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>info@murmanengineering.com</span><button type="button" class="copy" data-copy="info@murmanengineering.com">Copy</button></div>
+        <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Plot No. 31, Sector 1A, Koparkhairane, Navi Mumbai 400709</span><button type="button" class="copy" data-copy="Plot No. 31, Sector 1A, CIDCO Services Industrial Area, Koparkhairane, Navi Mumbai 400709">Copy</button></div>
+        <a class="btn btn-line" href="https://wa.me/917977188789?text=Hello%20Murman%2C%20I%20would%20like%20to%20set%20up%20a%20meeting." target="_blank" rel="noopener">Message us on WhatsApp</a>
+      </div>
+    </div>
+
+    <div>
+      <form class="form" id="req" novalidate>
+        <h3>Request a meeting</h3>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row">
+          <div class="field"><label for="r-name">Your name</label><input id="r-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="r-org">Company</label><input id="r-org" name="company" autocomplete="organization" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="r-phone">Phone or WhatsApp</label><input id="r-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91"></div>
+          <div class="field"><label for="r-email">Email <span class="opt">(or phone)</span></label><input id="r-email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="r-role">You are a</label>
+            <select id="r-role" name="role"><option>Developer</option><option>Bank, NBFC or investor</option><option>PMC or contractor</option><option>Architect or consultant</option><option>Other</option></select></div>
+          <div class="field"><label for="r-loc">Project location <span class="opt">(optional)</span></label><input id="r-loc" name="location" placeholder="Thane, Pune, Navi Mumbai"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="r-size">Plot or built-up area <span class="opt">(optional)</span></label><input id="r-size" name="size" placeholder="8,000 sqm plot"></div>
+          <div class="field"><label for="r-stage">Project stage</label>
+            <select id="r-stage" name="stage"><option>Planning, before sanction</option><option>Sanctioned, not started</option><option>Under construction</option><option>Completed or near handover</option></select></div>
+        </div>
+        <fieldset class="field">
+          <legend>Interested in</legend>
+          <div class="picks">
+            <label><input type="checkbox" name="interest" value="YIELD (green FSI)" checked> YIELD</label>
+            <label><input type="checkbox" name="interest" value="SIGHT (AI site quality)"> SIGHT</label>
+            <label><input type="checkbox" name="interest" value="MIX (low-carbon materials)"> MIX</label>
+            <label><input type="checkbox" name="interest" value="ASSURE (clearance and compliance)"> ASSURE</label>
+            <label><input type="checkbox" name="interest" value="TRUE (green claims)"> TRUE</label>
+            <label><input type="checkbox" name="interest" value="CAPITAL (green finance)"> CAPITAL</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="r-msg">Anything else <span class="opt">(optional)</span></label><textarea id="r-msg" name="message" rows="3" placeholder="Preferred days or times, questions, a site visit"></textarea></div>
+        <p class="form-error" id="req-err" role="alert" hidden>Add your name, your company and a phone number or email so we can reach you.</p>
+        <div class="form-actions"><button class="btn btn-navy" type="submit" id="req-submit">Request a meeting</button><small>We reply within one working day.</small></div>
+      </form>
+      <div class="form sent" id="sent" tabindex="-1" hidden>
+        <h3 id="sent-title">Your request is ready to send</h3>
+        <p id="sent-sub"></p>
+        <pre id="sent-text"></pre>
+        <div class="acts">
+          <a class="btn btn-navy" id="sent-wa" href="https://wa.me/917977188789" target="_blank" rel="noopener">Send on WhatsApp</a>
+          <button class="btn btn-line" type="button" id="sent-copy">Copy message</button>
+          <button class="btn btn-line" type="button" id="sent-edit">Edit details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 97 118" aria-hidden="true"><path d="M96.23 .14V18.07L48.89 45.21 17.07 27.61V80.94C27.2 87.47 38.11 92.98 48.5 99.17L96.23 72.32V90.25L48.5 117.32 2.47 91.34.77 89.79V.14L48.5 26.98Z"/><path d="M96.23 36.46V54.63L48.27 81.17V63.71Z"/></svg>
+    <div>
+      <b>MURMAN ENGINEERING INDIA PVT LTD</b>
+      <p>Green building, compliance and AI site quality for real estate.</p>
+      <p>CIN U43301MH2025PTC448225 · © 2026</p>
+    </div>
+    <div class="lines">
+      <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>+91 79771 88789</span></div>
+      <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>info@murmanengineering.com</span></div>
+      <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Plot No. 31, Sector 1A, CIDCO Services Industrial Area, Koparkhairane, Navi Mumbai 400709</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
