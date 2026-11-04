@@ -112,3 +112,13 @@ if ($("req")) {
   $("sent-copy").addEventListener("click", (e) => copyText(lastMsg, e.currentTarget));
   $("sent-edit").addEventListener("click", () => { $("sent").hidden = true; form.hidden = false; $("r-name").focus(); });
 }
+
+/* Client logo strip: pause and resume */
+if ($("logo-pause")) {
+  const box = document.querySelector(".clients"), b = $("logo-pause");
+  b.addEventListener("click", () => {
+    const paused = box.classList.toggle("paused");
+    b.setAttribute("aria-pressed", String(paused));
+    b.textContent = paused ? "Play logos" : "Pause logos";
+  });
+}
