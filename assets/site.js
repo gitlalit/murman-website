@@ -122,3 +122,13 @@ if ($("logo-pause")) {
     b.textContent = paused ? "Play logos" : "Pause logos";
   });
 }
+
+/* Phone menu */
+document.querySelectorAll(".menu-btn").forEach((btn) => {
+  const nav = document.getElementById(btn.getAttribute("aria-controls"));
+  btn.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    btn.setAttribute("aria-expanded", String(open));
+  });
+  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => { nav.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); }));
+});
