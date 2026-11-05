@@ -341,3 +341,28 @@ fieldset.field{border:0;margin:0;padding:0}
 
 /* grid children may shrink below their content's width; long tables scroll inside their own box */
 .ai>*,.meet>*,.record-top>*,.team>*,.audiences>*,.person>*,.stage>*{min-width:0}
+
+/* hero context line and free-tool pointer (home) */
+.hero-context{margin-top:var(--s6);max-width:70ch;font-size:var(--t-small);color:var(--ink-2);padding-left:var(--s4);border-left:1px solid var(--tan)}
+.hero-context cite{display:block;font-style:normal;font-size:.78rem;margin-top:var(--s1);color:var(--ink-2)}
+.tool-teaser{margin-top:var(--s7);display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:var(--s3) var(--s6);padding:var(--s5) var(--s5);
+  background:var(--sheet);border:1.5px solid var(--navy);border-radius:var(--radius);text-decoration:none;color:var(--ink);transition:background-color .2s var(--ease-out)}
+.tool-teaser:hover{background:var(--tan-wash)}
+.tt-label{font:800 .7rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;color:#FFFFFF;background:var(--navy);padding:.45rem .6rem;border-radius:2px}
+.tt-body b{display:block;font:800 1.15rem/1.25 var(--display);color:var(--navy)}
+.tt-body span{display:block;color:var(--ink-2);font-size:.95rem;margin-top:.15rem}
+.tt-example{font-size:var(--t-small);color:var(--ink-2);max-width:20ch}
+.tt-example b{color:var(--navy);font-family:var(--display)}
+.tt-go{display:inline-flex;align-items:center;gap:var(--s2);font:700 .875rem/1 var(--display);color:var(--blue);white-space:nowrap}
+.tt-go svg{width:1.1rem;height:1.1rem;transition:transform .2s var(--ease-out)}
+.tool-teaser:hover .tt-go svg{transform:translateX(3px)}
+@media (max-width:900px){.tool-teaser{grid-template-columns:minmax(0,1fr)}.tt-label{justify-self:start}.tt-example{max-width:none}}
+
+/* tool pages */
+.tool-hero{padding-block:var(--s7) var(--s8)}
+.tool-hero h1{font-size:clamp(2.1rem,1.4rem + 3vw,3.6rem)}
+.crumb{font-size:var(--t-small);color:var(--ink-2);margin-bottom:var(--s4)}
+.crumb a{color:var(--ink-2)}
+.tool-hero .statement{margin-top:var(--s7)}
+.audiences>div>p+p{margin-top:var(--s2)}
+.site-foot p a{color:var(--on-navy-2);text-decoration:underline}

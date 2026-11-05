@@ -67,7 +67,7 @@ if ($("req")) {
     const picks = [...form.querySelectorAll('input[name="interest"]:checked')].map((i) => i.value);
     return [
       "Meeting request for Murman Engineering", "",
-      "Name: " + val("r-name"), "Company: " + val("r-org"),
+      "Name: " + val("r-name"), "Organisation: " + val("r-org"),
       val("r-phone") && "Phone: " + val("r-phone"), val("r-email") && "Email: " + val("r-email"),
       "Role: " + val("r-role"),
       val("r-loc") && "Project location: " + val("r-loc"), val("r-size") && "Project size: " + val("r-size"),
