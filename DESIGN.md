@@ -5,58 +5,57 @@ Read this before adding or changing any page. Every page uses `assets/site.css` 
 ## World
 The Murman letterhead and the sanctioned-plan drawing set. The navy band, the diagonal corner and the shield mark come from the letterhead. Tables, schedules and area statements come from the drawings a developer reads every day.
 
-## Brand kit (fixed, from the Murman Letterhead and Brand Kit PDF)
-| Role | Token | Value |
-|---|---|---|
-| Primary | `--navy` | #070F5A |
-| Secondary | `--blue` | #004AAD |
-| Accent | `--tan` | #B8987F (use `--tan-ink` #6F5440 when tan is text) |
-| Page ground | `--paper` | #F6F6FA (white tinted toward navy) |
-| Working surface | `--sheet` | #FFFFFF |
-| Body text | `--ink` | #0E1240 (navy-tinted, never pure black) |
-| Secondary text | `--ink-2` on paper, `--on-navy-2` on navy | never grey on a coloured ground |
+## Colour (brand kit only, rebuilt 5 Nov 2026)
+The five brand kit colours, plus three tints mixed from them. No other colours.
 
-- **Display face:** Montserrat 700/800.
-- **Text face:** DM Sans 400 to 700.
-- **No other families.**
-- **Logo:**
-  - Use the inline SVG shield mark with "MURMAN" and "ENGINEERING INDIA PVT LTD" set in Montserrat.
-  - The mark is white on navy and navy on light grounds.
-- **Theme:** light only. The visitor is a developer, banker or PMC at a desk or on site in daylight.
+| Token | Value | Role |
+|---|---|---|
+| `--navy` | #070F5A | headings, primary buttons, header, footer, navy bands, status "Available" |
+| `--blue` | #004AAD | links, focus ring, button hover, hero accent line |
+| `--tan` | #B8987F | rules, list markers, timeline, watermark, labels on navy. Never as text on white (2.6:1) |
+| `--white` | #FFFFFF | page ground, forms, records |
+| `--black` | #000000 | body text |
+| `--tan-tint` | #F2ECE8 | alternate section ground, input cells, highlight rows |
+| `--tan-mid` | #DFD1C5 | status "In pilot", hover on tint, form highlights |
+| `--line` | #D7D9E5 | hairlines and input borders |
+| `--ink-2` | #4C4C4C | secondary text on white (8.6:1) |
+| `--on-navy-2` | #C8CADB | secondary text on navy (10.5:1) |
+
+- **Status in example records:** use shape and words as well as colour. "Pass" is a navy outline with a tick, "Rework" is solid navy, "Follow up" is tan-mid.
+- **Section rhythm:** white, then `.sec.tint`, then `.sec.navy`, alternating. Never two navy bands in a row.
 
 ## Type scale
 | Role | Token | Notes |
 |---|---|---|
-| Hero | `--t-hero` | fluid, up to 4.75rem, tracking -0.035em |
-| Section heading | `--t-h2` | fluid, up to 2.75rem |
-| Item heading | `--t-h3` | 1.3rem |
+| Hero | `--t-hero` | fluid, up to 5rem, tracking -0.035em |
+| Section heading | `--t-h2` | fluid, up to 2.9rem |
+| Item heading | `--t-h3` | 1.35rem |
 | Lead | `--t-lead` | |
-| Body | `--t-body` | 1.0625rem |
-| Small | `--t-small` | 0.875rem |
-| Label | `--t-label` | 0.72rem uppercase, only for table headers and status tags |
+| Body | `--t-body` | 1.125rem (18px), line height 1.7 |
+| Small | `--t-small` | 1rem; meta text `--t-meta` 0.875rem is the smallest size used |
+| Label | `--t-label` | 0.8125rem, used sparingly for table headers, status tags and audience labels |
 
 Keep body text within 45 to 75 characters a line.
 
 ## Spacing
-4px base: `--s1` (0.25rem) up to `--s10` (8rem). Sections use `--s9` vertical padding. Leave more space above a heading than below it.
+4px base: `--s1` (0.25rem) up to `--s9` (7rem). Sections use `--s9` vertical padding (`--s8` on phones). Never override spacing with inline styles. Leave more space above a heading than below it.
 
 ## Components in site.css
 | Class | What it is |
 |---|---|
-| `.site-head` | navy header band with the brand and nav |
+| `.site-head` | navy header band with brand, nav, Book a meeting and the phone Menu button |
 | `.site-foot` | navy footer with the blue diagonal corner |
-| `.btn-navy`, `.btn-line`, `.btn-tan` | primary, secondary and on-navy actions |
-| `.sec` and `.sec-intro` | a section, and its heading plus lead paragraph |
-| `.statement` and `.st-table` | the area-statement table (green FSI calculator) |
-| `.schedule`, `.stage`, `.svc` | the services schedule, with expandable rows |
-| `.band` | navy section with the letterhead diagonal top edge |
-| `.report` | example data table on a white sheet |
-| `.audiences` | three prose columns divided by rules |
-| `.timeline` | a dated sequence |
-| `.gallery` and `.filters` | project photos with sector filter |
-| `.team` and `.person` | people, with the shield-shaped initials |
-| `.meet`, `.steps`, `.contact`, `.form` | the meeting request block |
-| `.status.ready`, `.status.pilot`, `.tag.ok`, `.tag.warn`, `.tag.bad` | state labels |
+| `.btn-primary`, `.btn-secondary`, `.btn-tan` | primary (navy), secondary (navy outline) and on-navy (tan) actions |
+| `.sec`, `.sec.tint`, `.sec.navy`, `.intro` | sections and their heading-plus-lead block |
+| `.hero`, `.lead`, `.actions`, `.context`, `.tool-link` | home opening, lead paragraph, buttons, cited context line, free-tool pointer |
+| `.stage`, `.svcs`, `.svc`, `.state` | services by life-cycle stage, each in plain view, with status |
+| `.mrv`, `.flow`, `.record`, `.tag` | Digital MRV band, its steps, the example record table, status tags |
+| `.columns` | three prose columns under tan rules |
+| `.record-top`, `.timeline`, `.filters`, `.gallery` | track record intro, dated sequence, sector filter, photos |
+| `.clients`, `.logo-row`, `.logo-track` | moving client logo strip with pause button |
+| `.team`, `.person`, `.shield` | leadership, with shield-shaped initials |
+| `.meet`, `.steps`, `.contact`, `.form`, `.field`, `.picks` | meeting block and form |
+| `.tool-hero`, `.crumb`, `.statement`, `.st-table` | free tool pages and the area-statement calculator |
 
 ## Rules (from the Impeccable design rulebook)
 - **No eyebrow or kicker labels above headings.** The heading carries itself.

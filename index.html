@@ -19,189 +19,194 @@
 <body>
 
 <header class="site-head">
-  <div class="wrap">
+  <div class="wrap bar">
     <a class="brand" href="/" aria-label="Murman Engineering India Pvt Ltd, home">
       <svg viewBox="0 0 97 118" aria-hidden="true"><path d="M96.23 .14V18.07L48.89 45.21 17.07 27.61V80.94C27.2 87.47 38.11 92.98 48.5 99.17L96.23 72.32V90.25L48.5 117.32 2.47 91.34.77 89.79V.14L48.5 26.98Z"/><path d="M96.23 36.46V54.63L48.27 81.17V63.71Z"/></svg>
       <span><b>MURMAN</b><small>ENGINEERING INDIA PVT LTD</small></span>
     </a>
-    <nav aria-label="Main">
+    <nav id="site-nav" aria-label="Main">
       <ul class="site-nav">
         <li><a href="/#services">Services</a></li>
-        <li><a href="/#ai">Digital MRV</a></li>
+        <li><a href="/#mrv">Digital MRV</a></li>
         <li><a href="/#record">Track record</a></li>
-        <li><a href="/#team">Leadership</a></li>
+        <li><a href="/#leadership">Leadership</a></li>
         <li><a href="/tools/green-fsi/">Free FSI tool</a></li>
+        <li><a href="/#meet">Contact</a></li>
       </ul>
     </nav>
-    <a class="btn btn-tan" href="/#meet">Book a meeting</a>
+    <div class="head-actions">
+      <a class="btn btn-tan" href="/#meet">Book a meeting</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu</button>
+    </div>
   </div>
 </header>
 
 <main>
 <section class="hero">
   <div class="wrap">
-    <h1><span class="l">Low-carbon buildings.</span> <span class="l">Verified on site.</span> <span class="l pay">Ready for green finance.</span></h1>
-    <p class="hero-lead">Murman Engineering helps real estate developers in India reduce whole-life carbon, meet environmental regulation and access sustainable finance. We pair 35 years of construction delivery with digital measurement, reporting and verification, so every claim about a building is backed by evidence.</p>
-    <div class="hero-actions">
-      <a class="btn btn-navy" href="/#meet">Book a 30-minute meeting</a>
-      <a class="btn btn-line" href="https://wa.me/917977188789?text=Hello%20Murman%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <h1><span class="l">Low-carbon buildings.</span> <span class="l">Verified on site.</span> <span class="l accent">Ready for green finance.</span></h1>
+    <p class="lead">Murman Engineering helps real estate developers in India reduce whole-life carbon, meet environmental regulation and access sustainable finance. We pair 35 years of construction delivery with digital measurement, reporting and verification, so every claim about a building is backed by evidence.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/#meet">Book a 30-minute meeting</a>
+      <a class="btn btn-secondary" href="https://wa.me/917977188789?text=Hello%20Murman%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a>
     </div>
-    <p class="hero-context">Buildings and construction account for 34% of global CO<sub>2</sub> emissions and 32% of global energy demand. <cite>UNEP and GlobalABC, Global Status Report for Buildings and Construction 2024/2025</cite></p>
+    <p class="context">Buildings and construction account for 34% of global CO<sub>2</sub> emissions and 32% of global energy demand. <cite>UNEP and GlobalABC, Global Status Report for Buildings and Construction 2024/2025</cite></p>
 
-    <a class="tool-teaser" href="/tools/green-fsi/">
-      <span class="tt-label">Free tool</span>
-      <span class="tt-body"><b>Green FSI estimator</b><span>See the additional built-up area a green building rating can unlock on your plot under Maharashtra's UDCPR.</span></span>
-      <span class="tt-example num">Example: 10,000 sqm plot, gold rating, <b>550 sqm</b> additional area</span>
-      <span class="tt-go">Open the estimator <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    <a class="tool-link" href="/tools/green-fsi/">
+      <span>
+        <span class="label">Free tool</span>
+        <b>Green FSI estimator</b>
+        <p>See the additional built-up area a green building rating can unlock on your plot under Maharashtra's UDCPR. For example, a 10,000 sqm plot with a gold rating gains <strong class="num">550 sqm</strong>.</p>
+      </span>
+      <span class="go">Open the estimator <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
   </div>
 </section>
 
-<section class="sec" id="services" style="padding-top:var(--s7)">
+<section class="sec" id="services">
   <div class="wrap">
-    <div class="sec-intro">
+    <div class="intro">
       <h2>Six services across the building life cycle</h2>
-      <p>From design and approvals to construction, disclosure and financing. Each service can be engaged on its own, and together they build one verified record of a project's environmental performance. Open any row for detail.</p>
+      <p>From design and approvals to construction, disclosure and financing. Each service can be engaged on its own, and together they build one verified record of a project's environmental performance.</p>
     </div>
 
-    <div class="schedule">
-      <div class="stage">
-        <div class="stage-name"><b>Plan</b><span>Design and approvals</span></div>
-        <div>
-          <details class="svc">
-            <summary>
-              <div class="svc-name"><b>Murman YIELD</b><span>Green building incentives</span></div>
-              <div class="svc-what">We plan your green building certification to secure the additional FSI offered under Maharashtra's UDCPR, and track compliance through to the occupancy certificate.<em>3 to 7% additional built-up area on the same plot.</em></div>
-              <span class="status ready">Available</span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-            </summary>
-            <div class="svc-more"><ul><li>Certification pathway and target rating (IGBC or GRIHA), matched to cost and sales plan</li><li>Pre-certification dossier and FSI computation for sanction drawings</li><li>Compliance tracking to final certification, protecting the incentive</li></ul></div>
-          </details>
-        </div>
-      </div>
-
-      <div class="stage">
-        <div class="stage-name"><b>Build</b><span>Construction</span></div>
-        <div>
-          <details class="svc">
-            <summary>
-              <div class="svc-name"><b>Murman SIGHT</b><span>Digital quality assurance</span></div>
-              <div class="svc-what">Site teams capture time-stamped photographs. AI checks them against specifications and produces a daily quality record with defects, owners and closure dates.<em>Less rework and material waste, and a verifiable record of build quality.</em></div>
-              <span class="status pilot">In pilot</span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-            </summary>
-            <div class="svc-more"><ul><li>Inspection of tiling, stone, waterproofing, plaster and finishes, built on 35 years of trade expertise</li><li>Defect logs with photographic evidence and contractor accountability</li><li>A digital audit trail for certification, handover and assurance</li></ul></div>
-          </details>
-          <details class="svc">
-            <summary>
-              <div class="svc-name"><b>Murman MIX</b><span>Embodied carbon reduction</span></div>
-              <div class="svc-what">We measure the embodied carbon in your bill of quantities and specify lower-carbon materials at equal or lower cost.<em>Lower upfront carbon, often at lower cost.</em></div>
-              <span class="status ready">Available</span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-            </summary>
-            <div class="svc-more"><ul><li>Carbon-costed bill of quantities, based on cradle-to-gate life cycle assessment</li><li>Low-carbon cement and concrete (LC3, PSC, GGBS) and recycled construction and demolition material</li><li>Supplier sourcing and on-site execution support</li></ul></div>
-          </details>
-        </div>
-      </div>
-
-      <div class="stage">
-        <div class="stage-name"><b>Prove</b><span>Disclosure and assurance</span></div>
-        <div>
-          <details class="svc">
-            <summary>
-              <div class="svc-name"><b>Murman ASSURE</b><span>Environmental compliance</span></div>
-              <div class="svc-what">One desk for environmental clearance and ongoing regulatory compliance, from application to completion.<em>Compliance without delays or penalties.</em></div>
-              <span class="status ready">Available</span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-            </summary>
-            <div class="svc-more"><ul><li>Environmental Clearance under the EIA Notification for projects of 20,000 sqm and above, with accredited partners</li><li>Six-monthly compliance monitoring reports</li><li>Construction and Demolition Waste Management Rules 2025: waste plans, records and audit readiness</li></ul></div>
-          </details>
-          <details class="svc">
-            <summary>
-              <div class="svc-name"><b>Murman TRUE</b><span>Green claims assurance</span></div>
-              <div class="svc-what">Before a brochure, hoarding or advertisement is published, we test every environmental claim against the evidence and India's CCPA guidelines on greenwashing.<em>Credible claims that withstand scrutiny.</em></div>
-              <span class="status ready">Available</span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-            </summary>
-            <div class="svc-more"><ul><li>Review of brochures, websites, advertisements and site hoardings</li><li>An evidence file for every claim</li><li>Plain-language wording your sales team can use</li></ul></div>
-          </details>
-        </div>
-      </div>
-
-      <div class="stage">
-        <div class="stage-name"><b>Earn</b><span>Sustainable finance</span></div>
-        <div>
-          <details class="svc">
-            <summary>
-              <div class="svc-name"><b>Murman CAPITAL</b><span>Sustainable finance readiness</span></div>
-              <div class="svc-what">Lenders and investors need verified data before offering green or sustainability-linked terms. We prepare that evidence in the formats they use.<em>Access to green construction finance and green home loans.</em></div>
-              <span class="status pilot">In pilot</span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-            </summary>
-            <div class="svc-more"><ul><li>Evidence packs for green and sustainability-linked loans</li><li>Support for buyers' green home loans</li><li>Data for green bonds, taxonomy alignment and lenders' climate disclosures</li></ul></div>
-          </details>
-        </div>
+    <div class="stage">
+      <div class="stage-name"><b>Plan</b><span>Design and approvals</span></div>
+      <div class="svcs">
+        <article class="svc">
+          <div><h3>Murman YIELD</h3><p class="kind">Green building incentives</p><span class="state available">Available</span></div>
+          <div class="svc-body">
+            <p>We plan your green building certification to secure the additional FSI offered under Maharashtra's UDCPR, and track compliance through to the occupancy certificate.</p>
+            <p class="gain">3 to 7% additional built-up area on the same plot.</p>
+            <ul><li>Certification pathway and target rating (IGBC or GRIHA), matched to cost and sales plan</li><li>Pre-certification dossier and FSI computation for sanction drawings</li><li>Compliance tracking to final certification, protecting the incentive</li></ul>
+          </div>
+        </article>
       </div>
     </div>
-    <p class="next-line"><span>In development:</span><span><b>Murman LEDGER</b>, ESG data and GRESB reporting for institutional investors</span><span><b>Murman ROOTS</b>, nature-related assessment and biodiversity, aligned with TNFD</span></p>
+
+    <div class="stage">
+      <div class="stage-name"><b>Build</b><span>Construction</span></div>
+      <div class="svcs">
+        <article class="svc">
+          <div><h3>Murman SIGHT</h3><p class="kind">Digital quality assurance</p><span class="state pilot">In pilot</span></div>
+          <div class="svc-body">
+            <p>Site teams capture time-stamped photographs. AI checks them against specifications and produces a daily quality record with defects, owners and closure dates.</p>
+            <p class="gain">Less rework and material waste, and a verifiable record of build quality.</p>
+            <ul><li>Inspection of tiling, stone, waterproofing, plaster and finishes, built on 35 years of trade expertise</li><li>Defect logs with photographic evidence and contractor accountability</li><li>A digital audit trail for certification, handover and assurance</li></ul>
+          </div>
+        </article>
+        <article class="svc">
+          <div><h3>Murman MIX</h3><p class="kind">Embodied carbon reduction</p><span class="state available">Available</span></div>
+          <div class="svc-body">
+            <p>We measure the embodied carbon in your bill of quantities and specify lower-carbon materials at equal or lower cost.</p>
+            <p class="gain">Lower upfront carbon, often at lower cost.</p>
+            <ul><li>Carbon-costed bill of quantities, based on cradle-to-gate life cycle assessment</li><li>Low-carbon cement and concrete (LC3, PSC, GGBS) and recycled construction and demolition material</li><li>Supplier sourcing and on-site execution support</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-name"><b>Prove</b><span>Disclosure and assurance</span></div>
+      <div class="svcs">
+        <article class="svc">
+          <div><h3>Murman ASSURE</h3><p class="kind">Environmental compliance</p><span class="state available">Available</span></div>
+          <div class="svc-body">
+            <p>One desk for environmental clearance and ongoing regulatory compliance, from application to completion.</p>
+            <p class="gain">Compliance without delays or penalties.</p>
+            <ul><li>Environmental Clearance under the EIA Notification for projects of 20,000 sqm and above, with accredited partners</li><li>Six-monthly compliance monitoring reports</li><li>Construction and Demolition Waste Management Rules 2025: waste plans, records and audit readiness</li></ul>
+          </div>
+        </article>
+        <article class="svc">
+          <div><h3>Murman TRUE</h3><p class="kind">Green claims assurance</p><span class="state available">Available</span></div>
+          <div class="svc-body">
+            <p>Before a brochure, hoarding or advertisement is published, we test every environmental claim against the evidence and India's CCPA guidelines on greenwashing.</p>
+            <p class="gain">Credible claims that withstand scrutiny.</p>
+            <ul><li>Review of brochures, websites, advertisements and site hoardings</li><li>An evidence file for every claim</li><li>Plain-language wording your sales team can use</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-name"><b>Earn</b><span>Sustainable finance</span></div>
+      <div class="svcs">
+        <article class="svc">
+          <div><h3>Murman CAPITAL</h3><p class="kind">Sustainable finance readiness</p><span class="state pilot">In pilot</span></div>
+          <div class="svc-body">
+            <p>Lenders and investors need verified data before offering green or sustainability-linked terms. We prepare that evidence in the formats they use.</p>
+            <p class="gain">Access to green construction finance and green home loans.</p>
+            <ul><li>Evidence packs for green and sustainability-linked loans</li><li>Support for buyers' green home loans</li><li>Data for green bonds, taxonomy alignment and lenders' climate disclosures</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="later">
+      <span class="label">In development</span>
+      <ul>
+        <li><b>Murman LEDGER</b>: ESG data and GRESB reporting for institutional investors</li>
+        <li><b>Murman ROOTS</b>: nature-related assessment and biodiversity, aligned with TNFD</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section class="sec band" id="ai">
-  <div class="wrap ai">
+<section class="sec navy" id="mrv">
+  <div class="wrap mrv">
     <div>
-      <div class="sec-intro" style="margin-bottom:0">
-        <h2>Digital MRV: AI handles the evidence, engineers make the decisions.</h2>
+      <div class="intro">
+        <h2>Digital MRV: AI handles the evidence, engineers make the decisions</h2>
         <p>Measurement, reporting and verification is the backbone of credible climate action. Most of it is documents, photographs and checklists. AI handles that volume, and a qualified engineer reviews and signs every output.</p>
       </div>
-      <ol class="ai-flow">
-        <li><b>Reads</b><p>Regulations, drawings, area statements and bills of quantities. <span>Approval and compliance files start in hours, not weeks.</span></p></li>
-        <li><b>Watches</b><p>Site photographs from your team's phones. <span>Quality and compliance issues are flagged the same day.</span></p></li>
-        <li><b>Writes</b><p>Compliance reports, quality records and lender evidence packs. <span>Your team stays focused on delivery.</span></p></li>
-        <li><b>Engineer</b><p>Reviews, decides and signs. <span>Backed by 35 years of civil and finishing work.</span></p></li>
+      <ol class="flow">
+        <li><b>Reads</b><p>Regulations, drawings, area statements and bills of quantities.<span>Approval and compliance files start in hours, not weeks.</span></p></li>
+        <li><b>Watches</b><p>Site photographs from your team's phones.<span>Quality and compliance issues are flagged the same day.</span></p></li>
+        <li><b>Writes</b><p>Compliance reports, quality records and lender evidence packs.<span>Your team stays focused on delivery.</span></p></li>
+        <li><b>Engineer</b><p>Reviews, decides and signs.<span>Backed by 35 years of civil and finishing work.</span></p></li>
       </ol>
     </div>
-    <figure class="report" aria-label="Example of a Murman SIGHT daily quality record" style="margin:0">
-      <div class="report-head"><b>Daily quality record</b><span>Example · Tower B, level 7</span></div>
-      <div class="report-scroll">
+    <figure class="record" aria-label="Example of a Murman SIGHT daily quality record" style="margin:0">
+      <div class="record-head"><b>Daily quality record</b><span>Example · Tower B, level 7</span></div>
+      <div class="record-scroll">
         <table>
           <thead><tr><th scope="col">Location</th><th scope="col">Check</th><th scope="col">Finding</th><th scope="col">Status</th></tr></thead>
           <tbody>
-            <tr><td>Flat 704, living</td><td>Floor tile lippage</td><td>1.8 mm against 1 mm specification</td><td><span class="tag bad">Rework</span></td></tr>
-            <tr><td>Flat 704, living</td><td>Tap test</td><td>3 hollow tiles near door</td><td><span class="tag bad">Rework</span></td></tr>
-            <tr><td>Flat 705, toilet</td><td>Waterproofing upturn</td><td>150 mm, photographed before tiling</td><td><span class="tag ok">Pass</span></td></tr>
-            <tr><td>Flat 706, kitchen</td><td>Joint width</td><td>2 mm uniform, grout pending</td><td><span class="tag warn">Follow up</span></td></tr>
-            <tr><td>Lobby</td><td>Stone slope to drain</td><td>1 in 100, as drawn</td><td><span class="tag ok">Pass</span></td></tr>
+            <tr><td>Flat 704, living</td><td>Floor tile lippage</td><td>1.8 mm against 1 mm specification</td><td><span class="tag fix">Rework</span></td></tr>
+            <tr><td>Flat 704, living</td><td>Tap test</td><td>3 hollow tiles near door</td><td><span class="tag fix">Rework</span></td></tr>
+            <tr><td>Flat 705, toilet</td><td>Waterproofing upturn</td><td>150 mm, photographed before tiling</td><td><span class="tag pass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Pass</span></td></tr>
+            <tr><td>Flat 706, kitchen</td><td>Joint width</td><td>2 mm uniform, grout pending</td><td><span class="tag watch">Follow up</span></td></tr>
+            <tr><td>Lobby</td><td>Stone slope to drain</td><td>1 in 100, as drawn</td><td><span class="tag pass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Pass</span></td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption class="report-foot"><span>14 photographs · 5 checks · 2 defects assigned to the tiling contractor</span><span>Verified by site engineer</span></figcaption>
+      <figcaption class="record-foot"><span>14 photographs · 5 checks · 2 defects assigned to the tiling contractor</span><span>Verified by site engineer</span></figcaption>
     </figure>
   </div>
 </section>
 
-<section class="sec" id="who">
+<section class="sec tint" id="who">
   <div class="wrap">
-    <div class="sec-intro">
+    <div class="intro">
       <h2>One evidence base for developers, financiers and project managers</h2>
       <p>Data collected once on site serves every stakeholder in the value chain.</p>
     </div>
-    <div class="audiences">
+    <div class="columns">
       <div>
-        <h3>Higher yield, faster approvals</h3>
         <p class="who">Real estate developers</p>
+        <h3>Higher yield, faster approvals</h3>
         <p>Residential, commercial, data centre and institutional projects across Mumbai, Thane, Navi Mumbai and Pune.</p>
         <ul><li>Additional FSI through green certification</li><li>Environmental clearance and compliance managed</li><li>Verified build quality for buyers</li></ul>
       </div>
       <div>
-        <h3>Verified green assets</h3>
         <p class="who">Banks, NBFCs and investors</p>
+        <h3>Verified green assets</h3>
         <p>Financial institutions growing green portfolios need assets with credible, verifiable data.</p>
         <ul><li>Verified project evidence in one pack</li><li>A pipeline of certification-ready projects</li><li>Data for climate risk and impact reporting</li></ul>
       </div>
       <div>
-        <h3>Specialist capacity on site</h3>
         <p class="who">Project management consultants and contractors</p>
+        <h3>Specialist capacity on site</h3>
         <p>Add green building, compliance and digital quality assurance to your scope without new hires.</p>
         <ul><li>Quality records in your format</li><li>Low-carbon material options and execution</li><li>White-label support for your clients</li></ul>
       </div>
@@ -209,10 +214,10 @@
   </div>
 </section>
 
-<section class="sec" id="record" style="padding-top:0">
+<section class="sec" id="record">
   <div class="wrap">
     <div class="record-top">
-      <div class="sec-intro">
+      <div class="intro">
         <h2>Since 1991, 55+ buildings delivered</h2>
         <p>Murman builds on the delivery record of its founding team: civil, interior and finishing works across healthcare, data centres, education, commercial, residential and public buildings, with a workforce of 500+.</p>
       </div>
@@ -235,98 +240,99 @@
       <button type="button" data-f="industrial" aria-pressed="false">Industrial</button>
     </div>
     <div class="gallery" id="gallery">
-      <figure data-sector="data"><img src="/img/sify.jpg" alt="Sify Data Centre, Rabale" width="344" height="242" loading="lazy"><figcaption><b>Sify Data Centre</b>Rabale, Navi Mumbai</figcaption></figure>
-      <figure data-sector="data"><img src="/img/ctrls.jpg" alt="CtrlS Data Centre, Mahape" width="358" height="239" loading="lazy"><figcaption><b>CtrlS Data Centre</b>Mahape, Navi Mumbai</figcaption></figure>
-      <figure data-sector="health"><img src="/img/hncii-hospital.jpg" alt="HNCII Hospital, Dockyard, Mumbai" width="323" height="827" loading="lazy"><figcaption><b>HNCII Hospital</b>Dockyard, Mumbai</figcaption></figure>
-      <figure data-sector="health"><img src="/img/hedgewar-hospital.jpg" alt="Dr. Hedgewar Hospital, Aurangabad" width="322" height="400" loading="lazy"><figcaption><b>Dr. Hedgewar Hospital</b>Aurangabad</figcaption></figure>
-      <figure data-sector="commercial"><img src="/img/kesar-solitaire.jpg" alt="Kesar Solitaire, Vashi" width="386" height="980" loading="lazy"><figcaption><b>Kesar Solitaire</b>Vashi, Navi Mumbai</figcaption></figure>
-      <figure data-sector="residential"><img src="/img/puranik-grand-central.jpg" alt="Puranik Grand Central, Thane" width="375" height="466" loading="lazy"><figcaption><b>Puranik Grand Central</b>Thane</figcaption></figure>
-      <figure data-sector="residential"><img src="/img/triveni-laurel.jpg" alt="Triveni Laurel, Kalyan West" width="411" height="512" loading="lazy"><figcaption><b>Triveni Laurel</b>Kalyan West</figcaption></figure>
-      <figure data-sector="education"><img src="/img/bp-marine.jpg" alt="BP Marine College, Panvel" width="903" height="370" loading="lazy"><figcaption><b>BP Marine College</b>Panvel</figcaption></figure>
-      <figure data-sector="education"><img src="/img/tilak-school.jpg" alt="Tilak Public School, Nerul" width="332" height="272" loading="lazy"><figcaption><b>Tilak Public School</b>Nerul, Navi Mumbai</figcaption></figure>
-      <figure data-sector="government"><img src="/img/gmc-khandwa.jpg" alt="Government Medical College, Khandwa" width="807" height="372" loading="lazy"><figcaption><b>Government Medical College</b>Khandwa, Madhya Pradesh</figcaption></figure>
-      <figure data-sector="government"><img src="/img/nizampur-police-quarters.jpg" alt="Police station and 118 quarters, Nizampur, Bhiwandi" width="485" height="453" loading="lazy"><figcaption><b>Police station and 118 quarters</b>Nizampur, Bhiwandi</figcaption></figure>
-      <figure data-sector="industrial"><img src="/img/elaf-cold-storage.jpg" alt="ELAF Cold Storage, Panvel" width="332" height="272" loading="lazy"><figcaption><b>ELAF Cold Storage</b>Panvel</figcaption></figure>
+      <figure data-sector="data"><img src="/img/sify.jpg" alt="Sify Data Centre, Rabale" width="400" height="300" loading="lazy"><figcaption><b>Sify Data Centre</b>Rabale, Navi Mumbai</figcaption></figure>
+      <figure data-sector="data"><img src="/img/ctrls.jpg" alt="CtrlS Data Centre, Mahape" width="400" height="300" loading="lazy"><figcaption><b>CtrlS Data Centre</b>Mahape, Navi Mumbai</figcaption></figure>
+      <figure data-sector="health"><img src="/img/hncii-hospital.jpg" alt="HNCII Hospital, Dockyard, Mumbai" width="400" height="300" loading="lazy"><figcaption><b>HNCII Hospital</b>Dockyard, Mumbai</figcaption></figure>
+      <figure data-sector="health"><img src="/img/hedgewar-hospital.jpg" alt="Dr. Hedgewar Hospital, Aurangabad" width="400" height="300" loading="lazy"><figcaption><b>Dr. Hedgewar Hospital</b>Aurangabad</figcaption></figure>
+      <figure data-sector="commercial"><img src="/img/kesar-solitaire.jpg" alt="Kesar Solitaire, Vashi" width="400" height="300" loading="lazy"><figcaption><b>Kesar Solitaire</b>Vashi, Navi Mumbai</figcaption></figure>
+      <figure data-sector="residential"><img src="/img/puranik-grand-central.jpg" alt="Puranik Grand Central, Thane" width="400" height="300" loading="lazy"><figcaption><b>Puranik Grand Central</b>Thane</figcaption></figure>
+      <figure data-sector="residential"><img src="/img/triveni-laurel.jpg" alt="Triveni Laurel, Kalyan West" width="400" height="300" loading="lazy"><figcaption><b>Triveni Laurel</b>Kalyan West</figcaption></figure>
+      <figure data-sector="education"><img src="/img/bp-marine.jpg" alt="BP Marine College, Panvel" width="400" height="300" loading="lazy"><figcaption><b>BP Marine College</b>Panvel</figcaption></figure>
+      <figure data-sector="education"><img src="/img/tilak-school.jpg" alt="Tilak Public School, Nerul" width="400" height="300" loading="lazy"><figcaption><b>Tilak Public School</b>Nerul, Navi Mumbai</figcaption></figure>
+      <figure data-sector="government"><img src="/img/gmc-khandwa.jpg" alt="Government Medical College, Khandwa" width="400" height="300" loading="lazy"><figcaption><b>Government Medical College</b>Khandwa, Madhya Pradesh</figcaption></figure>
+      <figure data-sector="government"><img src="/img/nizampur-police-quarters.jpg" alt="Police station and 118 quarters, Nizampur, Bhiwandi" width="400" height="300" loading="lazy"><figcaption><b>Police station and 118 quarters</b>Nizampur, Bhiwandi</figcaption></figure>
+      <figure data-sector="industrial"><img src="/img/elaf-cold-storage.jpg" alt="ELAF Cold Storage, Panvel" width="400" height="300" loading="lazy"><figcaption><b>ELAF Cold Storage</b>Panvel</figcaption></figure>
     </div>
 
     <div class="clients" aria-labelledby="clients-title">
-      <h3 id="clients-title">Clients and collaborators</h3>
-      <p class="clients-note">Public sector, developer and industry clients from 35 years of delivery.</p>
+      <div class="clients-top">
+        <div><h3 id="clients-title">Clients and collaborators</h3><p>Public sector, developer and industry clients from 35 years of delivery.</p></div>
+        <button type="button" class="logo-pause" id="logo-pause" aria-pressed="false">Pause logos</button>
+      </div>
       <div class="logo-row">
         <ul class="logo-track">
-          <li><img src="/img/clients/mumbai-police.jpg" alt="Mumbai Police" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/govt-madhya-pradesh.jpg" alt="Government of Madhya Pradesh" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/bharat-electronics.jpg" alt="Bharat Electronics" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/generic-engineering.jpg" alt="Generic Engineering" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/puraniks.jpg" alt="Puraniks" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/triveni.jpg" alt="Triveni" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/gannon-dunkerley.jpg" alt="Gannon Dunkerley" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/reliable-group.jpg" alt="Reliable Group" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/ctrls.jpg" alt="CtrlS" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/kesar-group.jpg" alt="Kesar Group" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/bp-marine-academy.jpg" alt="BP Marine Academy" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/aarti-industries.jpg" alt="Aarti Industries" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/toyota.jpg" alt="Toyota" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/bmw.jpg" alt="BMW" height="60" loading="lazy"></li>
+          <li><img src="/img/clients/mumbai-police.jpg" alt="Mumbai Police" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/govt-madhya-pradesh.jpg" alt="Government of Madhya Pradesh" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/bharat-electronics.jpg" alt="Bharat Electronics" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/generic-engineering.jpg" alt="Generic Engineering" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/puraniks.jpg" alt="Puraniks" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/triveni.jpg" alt="Triveni" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/gannon-dunkerley.jpg" alt="Gannon Dunkerley" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/reliable-group.jpg" alt="Reliable Group" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/ctrls.jpg" alt="CtrlS" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/kesar-group.jpg" alt="Kesar Group" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/bp-marine-academy.jpg" alt="BP Marine Academy" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/aarti-industries.jpg" alt="Aarti Industries" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/toyota.jpg" alt="Toyota" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/bmw.jpg" alt="BMW" height="56" loading="lazy"></li>
         </ul>
         <ul class="logo-track" aria-hidden="true">
-          <li><img src="/img/clients/mumbai-police.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/govt-madhya-pradesh.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/bharat-electronics.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/generic-engineering.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/puraniks.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/triveni.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/gannon-dunkerley.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/reliable-group.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/ctrls.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/kesar-group.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/bp-marine-academy.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/aarti-industries.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/toyota.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/bmw.jpg" alt="" height="60" loading="lazy"></li>
+          <li><img src="/img/clients/mumbai-police.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/govt-madhya-pradesh.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/bharat-electronics.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/generic-engineering.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/puraniks.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/triveni.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/gannon-dunkerley.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/reliable-group.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/ctrls.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/kesar-group.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/bp-marine-academy.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/aarti-industries.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/toyota.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/bmw.jpg" alt="" height="56" loading="lazy"></li>
         </ul>
       </div>
       <div class="logo-row reverse">
         <ul class="logo-track">
-          <li><img src="/img/clients/tilak-education.jpg" alt="Tilak Education Society" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/sk-wheels.jpg" alt="S.K. Wheels" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/himadri.jpg" alt="Himadri" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/avi-worldwide.jpg" alt="Avi Worldwide" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/raulimex.jpg" alt="Raulimex" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/glenmark.jpg" alt="Glenmark" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/master-associates.jpg" alt="Master and Associates" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/and-designs.jpg" alt="AND Designs" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/sify.jpg" alt="Sify" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/aadi-properties.jpg" alt="Aadi Properties" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/club-mahindra.jpg" alt="Club Mahindra" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/patel-group.jpg" alt="Patel Group" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/sitec-labs.jpg" alt="Sitec Labs" height="60" loading="lazy"></li>
+          <li><img src="/img/clients/tilak-education.jpg" alt="Tilak Education Society" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/sk-wheels.jpg" alt="S.K. Wheels" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/himadri.jpg" alt="Himadri" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/avi-worldwide.jpg" alt="Avi Worldwide" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/raulimex.jpg" alt="Raulimex" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/glenmark.jpg" alt="Glenmark" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/master-associates.jpg" alt="Master and Associates" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/and-designs.jpg" alt="AND Designs" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/sify.jpg" alt="Sify" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/aadi-properties.jpg" alt="Aadi Properties" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/club-mahindra.jpg" alt="Club Mahindra" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/patel-group.jpg" alt="Patel Group" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/sitec-labs.jpg" alt="Sitec Labs" height="56" loading="lazy"></li>
         </ul>
         <ul class="logo-track" aria-hidden="true">
-          <li><img src="/img/clients/tilak-education.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/sk-wheels.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/himadri.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/avi-worldwide.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/raulimex.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/glenmark.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/master-associates.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/and-designs.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/sify.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/aadi-properties.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/club-mahindra.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/patel-group.jpg" alt="" height="60" loading="lazy"></li>
-          <li><img src="/img/clients/sitec-labs.jpg" alt="" height="60" loading="lazy"></li>
+          <li><img src="/img/clients/tilak-education.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/sk-wheels.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/himadri.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/avi-worldwide.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/raulimex.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/glenmark.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/master-associates.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/and-designs.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/sify.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/aadi-properties.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/club-mahindra.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/patel-group.jpg" alt="" height="56" loading="lazy"></li>
+          <li><img src="/img/clients/sitec-labs.jpg" alt="" height="56" loading="lazy"></li>
         </ul>
       </div>
-      <button type="button" class="logo-pause" id="logo-pause" aria-pressed="false">Pause logos</button>
     </div>
     <p class="fine">Projects and clients from the delivery work of Lalit Enterprises (formerly LM Associates), led by Murarilal Kumawat. Names and logos belong to their owners. Some images are developer renderings.</p>
   </div>
 </section>
 
-<section class="sec" id="team" style="padding-top:0">
+<section class="sec tint" id="leadership">
   <div class="wrap">
-    <div class="sec-intro"><h2>Leadership</h2></div>
+    <div class="intro"><h2>Leadership</h2></div>
     <div class="team">
       <article class="person">
         <div class="shield" aria-hidden="true">MK</div>
@@ -350,10 +356,10 @@
   </div>
 </section>
 
-<section class="sec" id="meet" style="padding-top:0">
+<section class="sec" id="meet">
   <div class="wrap meet">
     <div>
-      <div class="sec-intro" style="margin-bottom:0">
+      <div class="intro">
         <h2>Start with one project</h2>
         <p>Tell us about your project. We reply within one working day to arrange a meeting at your office, on site or online.</p>
       </div>
@@ -367,7 +373,7 @@
         <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>+91 79771 88789</span><button type="button" class="copy" data-copy="+91 7977188789">Copy</button></div>
         <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>info@murmanengineering.com</span><button type="button" class="copy" data-copy="info@murmanengineering.com">Copy</button></div>
         <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Plot No. 31, Sector 1A, Koparkhairane, Navi Mumbai 400709</span><button type="button" class="copy" data-copy="Plot No. 31, Sector 1A, CIDCO Services Industrial Area, Koparkhairane, Navi Mumbai 400709">Copy</button></div>
-        <a class="btn btn-line" href="https://wa.me/917977188789?text=Hello%20Murman%2C%20I%20would%20like%20to%20set%20up%20a%20meeting." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn btn-secondary" href="https://wa.me/917977188789?text=Hello%20Murman%2C%20I%20would%20like%20to%20set%20up%20a%20meeting." target="_blank" rel="noopener">Chat on WhatsApp</a>
       </div>
     </div>
 
@@ -406,16 +412,16 @@
         </fieldset>
         <div class="field"><label for="r-msg">Anything else <span class="opt">(optional)</span></label><textarea id="r-msg" name="message" rows="3" placeholder="Preferred days or times, questions, a site visit"></textarea></div>
         <p class="form-error" id="req-err" role="alert" hidden>Add your name, your organisation and a phone number or email so we can reach you.</p>
-        <div class="form-actions"><button class="btn btn-navy" type="submit" id="req-submit">Request a meeting</button><small>We reply within one working day.</small></div>
+        <div class="form-actions"><button class="btn btn-primary" type="submit" id="req-submit">Request a meeting</button><small>We reply within one working day.</small></div>
       </form>
       <div class="form sent" id="sent" tabindex="-1" hidden>
         <h3 id="sent-title">Your request is ready to send</h3>
         <p id="sent-sub"></p>
         <pre id="sent-text"></pre>
         <div class="acts">
-          <a class="btn btn-navy" id="sent-wa" href="https://wa.me/917977188789" target="_blank" rel="noopener">Send on WhatsApp</a>
-          <button class="btn btn-line" type="button" id="sent-copy">Copy message</button>
-          <button class="btn btn-line" type="button" id="sent-edit">Edit details</button>
+          <a class="btn btn-primary" id="sent-wa" href="https://wa.me/917977188789" target="_blank" rel="noopener">Send on WhatsApp</a>
+          <button class="btn btn-secondary" type="button" id="sent-copy">Copy message</button>
+          <button class="btn btn-secondary" type="button" id="sent-edit">Edit details</button>
         </div>
       </div>
     </div>
