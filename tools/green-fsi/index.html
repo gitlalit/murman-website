@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Green FSI Estimator | Murman Engineering</title>
+<meta name="description" content="Free tool: estimate the additional built-up area and sale value a green building rating can unlock on your plot under Maharashtra's UDCPR green building incentive.">
+<meta property="og:title" content="Green FSI Estimator: Murman Engineering">
+<meta property="og:description" content="See what a silver, gold or platinum green building rating adds to your plot under Maharashtra's UDCPR.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.murmanengineering.com/tools/green-fsi/">
+<link rel="canonical" href="https://www.murmanengineering.com/tools/green-fsi/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Murman Engineering India Pvt Ltd, home">
+      <svg viewBox="0 0 97 118" aria-hidden="true"><path d="M96.23 .14V18.07L48.89 45.21 17.07 27.61V80.94C27.2 87.47 38.11 92.98 48.5 99.17L96.23 72.32V90.25L48.5 117.32 2.47 91.34.77 89.79V.14L48.5 26.98Z"/><path d="M96.23 36.46V54.63L48.27 81.17V63.71Z"/></svg>
+      <span><b>MURMAN</b><small>ENGINEERING INDIA PVT LTD</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="site-nav">
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#ai">Digital MRV</a></li>
+        <li><a href="/#record">Track record</a></li>
+        <li><a href="/#team">Leadership</a></li>
+        <li><a href="/tools/green-fsi/" aria-current="page">Free FSI tool</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-tan" href="/#meet">Book a meeting</a>
+  </div>
+</header>
+
+<main>
+<section class="hero tool-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Home</a> <span aria-hidden="true">/</span> Free tools</p>
+    <h1>Green FSI estimator</h1>
+    <p class="hero-lead">Maharashtra's Unified Development Control and Promotion Regulations (UDCPR) allow additional FSI for buildings that achieve a green building rating. Enter your plot details to see the indicative additional built-up area and its sale value.</p>
+
+    <form class="statement" id="statement" aria-labelledby="st-title" onsubmit="return false">
+      <div class="statement-head">
+        <h2 id="st-title">Area statement: green building incentive</h2>
+        <p>Change the white cells. The highlighted rows update.</p>
+      </div>
+      <table class="st-table">
+        <thead><tr><th scope="col">No.</th><th scope="col">Description</th><th scope="col" style="text-align:right">Value</th><th scope="col">Unit</th></tr></thead>
+        <tbody>
+          <tr><td class="no">1</td><td class="desc"><label for="st-plot">Plot area</label></td><td class="val"><input id="st-plot" type="number" min="0" step="100" value="10000" inputmode="decimal"></td><td class="unit">sqm</td></tr>
+          <tr><td class="no">2</td><td class="desc"><label for="st-fsi">Basic FSI permissible</label></td><td class="val"><input id="st-fsi" type="number" min="0" step="0.05" value="1.1" inputmode="decimal"></td><td class="unit">ratio</td></tr>
+          <tr><td class="no">3</td><td class="desc">Basic built-up area<span class="formula">Item 1 × item 2</span></td><td class="val"><span id="st-bua">11,000</span></td><td class="unit">sqm</td></tr>
+          <tr><td class="no">4</td><td class="desc"><label for="st-rating">Green building rating (pre-certified)</label></td><td class="val"><select id="st-rating"><option value="3">Silver, 3%</option><option value="5" selected>Gold, 5%</option><option value="7">Platinum, 7%</option></select></td><td class="unit">IGBC / GRIHA</td></tr>
+          <tr class="gain" id="row-gain"><td class="no">5</td><td class="desc">Additional FSI for green building, UDCPR<span class="formula"><span id="st-pct">5</span>% of item 3 · <span id="st-extra-sqft">5,920 sq ft</span></span></td><td class="val"><span id="st-extra">550</span></td><td class="unit">sqm</td></tr>
+          <tr><td class="no">6</td><td class="desc"><label for="st-rate">Sale rate</label></td><td class="val"><input id="st-rate" type="number" min="0" step="500" value="10000" inputmode="decimal"></td><td class="unit">₹ per sq ft</td></tr>
+          <tr class="total" id="row-total"><td class="no">7</td><td class="desc">Indicative sale value of item 5<span class="formula">Item 5 in sq ft × item 6</span></td><td class="val"><span id="st-value">₹5.92 cr</span></td><td class="unit">before costs</td></tr>
+        </tbody>
+      </table>
+      <div class="statement-foot">
+        <p>Indicative only. The incentive depends on your plot, the planning authority, the rating you pre-certify and the rating you achieve at completion. We confirm the figure for your plot in a free assessment.</p>
+        <a class="btn btn-navy" href="/#meet">Get a free assessment</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-intro"><h2>How the incentive works</h2></div>
+    <div class="audiences">
+      <div>
+        <h3>Linked to the rating</h3>
+        <p>The additional FSI depends on the green building rating your project is pre-certified for: 3% for silver, 5% for gold and 7% for platinum, applied to the basic built-up area.</p>
+      </div>
+      <div>
+        <h3>Earned at completion</h3>
+        <p>The committed rating has to be achieved when the building is complete. Murman YIELD tracks the evidence through to the occupancy certificate so the incentive is protected.</p>
+      </div>
+      <div>
+        <h3>Checked plot by plot</h3>
+        <p>Eligibility and the exact figure depend on the planning authority, zoning and the plot itself. A free assessment confirms what applies to your project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 97 118" aria-hidden="true"><path d="M96.23 .14V18.07L48.89 45.21 17.07 27.61V80.94C27.2 87.47 38.11 92.98 48.5 99.17L96.23 72.32V90.25L48.5 117.32 2.47 91.34.77 89.79V.14L48.5 26.98Z"/><path d="M96.23 36.46V54.63L48.27 81.17V63.71Z"/></svg>
+    <div>
+      <b>MURMAN ENGINEERING INDIA PVT LTD</b>
+      <p>Low-carbon construction, environmental compliance and digital quality assurance for real estate.</p>
+      <p><a href="/tools/green-fsi/">Free green FSI estimator</a></p>
+      <p>CIN U43301MH2025PTC448225 · © 2026</p>
+    </div>
+    <div class="lines">
+      <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>+91 79771 88789</span></div>
+      <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>info@murmanengineering.com</span></div>
+      <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Plot No. 31, Sector 1A, CIDCO Services Industrial Area, Koparkhairane, Navi Mumbai 400709</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
