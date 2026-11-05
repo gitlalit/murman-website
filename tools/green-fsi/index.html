@@ -19,21 +19,25 @@
 <body>
 
 <header class="site-head">
-  <div class="wrap">
+  <div class="wrap bar">
     <a class="brand" href="/" aria-label="Murman Engineering India Pvt Ltd, home">
       <svg viewBox="0 0 97 118" aria-hidden="true"><path d="M96.23 .14V18.07L48.89 45.21 17.07 27.61V80.94C27.2 87.47 38.11 92.98 48.5 99.17L96.23 72.32V90.25L48.5 117.32 2.47 91.34.77 89.79V.14L48.5 26.98Z"/><path d="M96.23 36.46V54.63L48.27 81.17V63.71Z"/></svg>
       <span><b>MURMAN</b><small>ENGINEERING INDIA PVT LTD</small></span>
     </a>
-    <nav aria-label="Main">
+    <nav id="site-nav" aria-label="Main">
       <ul class="site-nav">
         <li><a href="/#services">Services</a></li>
-        <li><a href="/#ai">Digital MRV</a></li>
+        <li><a href="/#mrv">Digital MRV</a></li>
         <li><a href="/#record">Track record</a></li>
-        <li><a href="/#team">Leadership</a></li>
+        <li><a href="/#leadership">Leadership</a></li>
         <li><a href="/tools/green-fsi/" aria-current="page">Free FSI tool</a></li>
+        <li><a href="/#meet">Contact</a></li>
       </ul>
     </nav>
-    <a class="btn btn-tan" href="/#meet">Book a meeting</a>
+    <div class="head-actions">
+      <a class="btn btn-tan" href="/#meet">Book a meeting</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu</button>
+    </div>
   </div>
 </header>
 
@@ -42,12 +46,12 @@
   <div class="wrap">
     <p class="crumb"><a href="/">Home</a> <span aria-hidden="true">/</span> Free tools</p>
     <h1>Green FSI estimator</h1>
-    <p class="hero-lead">Maharashtra's Unified Development Control and Promotion Regulations (UDCPR) allow additional FSI for buildings that achieve a green building rating. Enter your plot details to see the indicative additional built-up area and its sale value.</p>
+    <p class="lead">Maharashtra's Unified Development Control and Promotion Regulations (UDCPR) allow additional FSI for buildings that achieve a green building rating. Enter your plot details to see the indicative additional built-up area and its sale value.</p>
 
     <form class="statement" id="statement" aria-labelledby="st-title" onsubmit="return false">
       <div class="statement-head">
         <h2 id="st-title">Area statement: green building incentive</h2>
-        <p>Change the white cells. The highlighted rows update.</p>
+        <p>Change the shaded cells. The highlighted rows update.</p>
       </div>
       <table class="st-table">
         <thead><tr><th scope="col">No.</th><th scope="col">Description</th><th scope="col" style="text-align:right">Value</th><th scope="col">Unit</th></tr></thead>
@@ -63,16 +67,16 @@
       </table>
       <div class="statement-foot">
         <p>Indicative only. The incentive depends on your plot, the planning authority, the rating you pre-certify and the rating you achieve at completion. We confirm the figure for your plot in a free assessment.</p>
-        <a class="btn btn-navy" href="/#meet">Get a free assessment</a>
+        <a class="btn btn-primary" href="/#meet">Get a free assessment</a>
       </div>
     </form>
   </div>
 </section>
 
-<section class="sec" style="padding-top:0">
+<section class="sec tint">
   <div class="wrap">
-    <div class="sec-intro"><h2>How the incentive works</h2></div>
-    <div class="audiences">
+    <div class="intro"><h2>How the incentive works</h2></div>
+    <div class="columns">
       <div>
         <h3>Linked to the rating</h3>
         <p>The additional FSI depends on the green building rating your project is pre-certified for: 3% for silver, 5% for gold and 7% for platinum, applied to the basic built-up area.</p>
