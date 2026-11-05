@@ -6,6 +6,7 @@ This is the Murman Engineering India Pvt Ltd website. It is a plain static site 
 | Path | What it holds |
 |---|---|
 | `index.html` | the home page |
+| `tools/green-fsi/index.html` | free Green FSI estimator page |
 | `assets/site.css` | shared design system for every page (see DESIGN.md) |
 | `assets/site.js` | shared behaviour: green FSI calculator, gallery filter, meeting form, copy buttons |
 | `assets/favicon.svg` | the Murman shield mark |
