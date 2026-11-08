@@ -26,4 +26,4 @@ Ask Claude to work on the GitHub repository for this site. For example: "add a p
 GitHub Pages republishes automatically within a minute or two.
 
 ## Meeting form
-The form sends through Web3Forms (free, 250 submissions a month) to info@murmanengineering.com. The access key is set in `assets/site.js` as `web3formsKey`. Until it is set, the form prepares a WhatsApp message to +91 79771 88789 instead.
+The form sends through Web3Forms (free, 250 submissions a month) to info@murmanengineering.com. The access key is set in `assets/site.js` as `web3formsKey`. Until it is set, the form prepares a WhatsApp message to +91 99677 76292 instead.
