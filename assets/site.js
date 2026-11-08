@@ -1,8 +1,8 @@
 /* Murman Engineering site behaviour. Shared by every page; each block runs only if its section exists. */
 
 const SITE = {
-  phone: "+91 99677 76292",
-  whatsapp: "919967776292",
+  phone: "+91 88283 81670",
+  whatsapp: "918828381670",
   email: "info@murmanengineering.com",
   /* Web3Forms access key: free key from web3forms.com, sent to info@murmanengineering.com.
      Until it is set, the form prepares a WhatsApp message instead of sending. */
