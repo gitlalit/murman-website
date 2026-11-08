@@ -10,6 +10,15 @@ const SITE = {
 };
 
 const $ = (id) => document.getElementById(id);
+/* Analytics events (GA4). Safe if the tag is blocked. */
+const track = (name, params) => { try { if (typeof gtag === "function") gtag("event", name, params || {}); } catch (e) {} };
+document.addEventListener("click", (e) => {
+  const a = e.target.closest && e.target.closest("a[href]");
+  if (!a) return;
+  if (a.href.includes("wa.me/")) track("whatsapp_click", { link_text: a.textContent.trim() });
+  else if (a.href.startsWith("tel:")) track("phone_click");
+  else if (a.href.includes("linkedin.com")) track("linkedin_click");
+});
 const inr = new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 });
 
 function copyText(text, btn) {
@@ -77,6 +86,7 @@ if ($("req")) {
     ].filter((l, i) => l || i === 1).join("\n");
   };
   const show = (sent) => {
+    track(sent ? "generate_lead" : "meeting_request_prepared", { method: sent ? "form" : "whatsapp_fallback" });
     $("sent-title").textContent = sent ? "Thank you. Your request has reached us." : "Your request is ready to send";
     $("sent-sub").textContent = sent
       ? "We reply within one working day. For anything urgent, message us on WhatsApp at " + SITE.phone + "."
