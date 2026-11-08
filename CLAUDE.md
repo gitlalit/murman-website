@@ -9,3 +9,6 @@ This repository is the live website for Murman Engineering India Pvt Ltd (www.mu
 - Phone for all purposes: +91 88283 81670 (WhatsApp 918828381670). Email: info@murmanengineering.com.
 - Check every page at 1400px and 390px wide with no sideways scroll before committing.
 - Do not delete CNAME or .nojekyll.
+
+- Every page must include the Google Analytics tag (G-ZYKR4YRTDZ) right after <head>, copied from index.html. Events tracked in site.js: whatsapp_click, phone_click, linkedin_click, generate_lead, meeting_request_prepared.
+- Add every new page to sitemap.xml and llms.txt.
