@@ -37,8 +37,10 @@ Projects and client logos come from that company profile and must be labelled as
 
 ## People
 - **Murarilal Kumawat:** Managing Director, execution.
-- **Lalit Kumar Kumawat:** Co-founder, strategy and technology (B.Tech, MBA).
 
 ## Do not claim
 - Green certifications or projects Murman has not delivered.
 - Guaranteed FSI figures. The calculator is always indicative.
+
+## Services (from 9 Nov 2026)
+Four bundles only: Green certification and incentives; Low-carbon materials and value engineering; Environmental compliance on site; Execution and quality. The old names (YIELD, SIGHT, MIX, ASSURE, TRUE, CAPITAL, LEDGER, ROOTS) are retired on the site. Do not name individual co-founders other than Murarilal Kumawat on the site.
