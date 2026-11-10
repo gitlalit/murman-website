@@ -386,3 +386,22 @@ fieldset.field{border:0;margin:0;padding:0}
 .bundle .gain{margin-top:var(--s2);line-height:1.45}
 .bundle ul{margin-top:var(--s3);line-height:1.5}
 @media (max-width:620px){.bundle h3{min-height:0}}
+
+/* Illustrated hero (10 Nov 2026): copy left, plan-drawing elevation right */
+.hero:has(.hero-grid)::before{display:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s7);align-items:center}
+.hero-grid>*{min-width:0}
+.hero-copy .context{margin-top:var(--s6)}
+.hero-fig{margin:0;justify-self:end;width:100%;max-width:30rem}
+.hero-art{display:block;width:100%;height:auto;border-radius:var(--radius);box-shadow:0 1px 0 var(--tan-mid),0 24px 48px -32px rgba(7,15,90,.35)}
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:var(--s6)}
+  .hero-fig{justify-self:start;max-width:26rem}
+}
+@media (max-width:560px){.hero-fig{max-width:none}}
+
+/* Service illustrations above each bundle */
+.bundle-art{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:var(--radius);margin-bottom:var(--s4)}
+.bundles .bundle{border-top:0;padding-top:0}
+.bundles .bundle .no{padding-top:var(--s3);border-top:3px solid var(--navy)}
+.bundle .no{color:var(--blue)} /* tan fails contrast as text on white */
