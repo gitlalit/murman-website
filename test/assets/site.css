@@ -520,3 +520,12 @@ body:not(.show-slots) .photos:not(:has(img)){display:none}
 .site-foot .foot-map a{color:var(--on-navy-2);text-decoration:none}.site-foot .foot-map a:hover{color:var(--white);text-decoration:underline}
 .route[hidden]{display:none}
 @media (max-width:900px){.routes,.two-col,.hero-grid.even{grid-template-columns:minmax(0,1fr)}.site-foot .foot-map{padding-right:0}}
+
+/* ---------- placed pictures ---------- */
+.shot{margin:0;min-width:0}
+.shot img{display:block;width:100%;height:auto;border-radius:var(--radius)}
+.photos .shot img{aspect-ratio:4/3;object-fit:cover}
+.shot figcaption{font-size:var(--t-meta);line-height:1.6;color:var(--ink-2);margin-top:var(--s3);max-width:80ch}
+.sec.navy .shot figcaption{color:var(--on-navy-2)}
+.shot.added{grid-column:1/-1;margin-top:var(--s7)}
+.shot.added.half{max-width:min(100%,36rem)}
