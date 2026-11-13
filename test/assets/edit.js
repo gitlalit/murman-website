@@ -324,12 +324,24 @@
     openDB().then(function (d) {
       DB = d;
       var prev = ''; try { prev = localStorage.getItem(BUILD_KEY) || ''; localStorage.setItem(BUILD_KEY, BUILD); } catch (e) {}
-      if (prev && prev !== BUILD) return Promise.all([all('text'), all('img'), all('added')]).then(function (r) {
-        var n = r[0].length + r[1].length + r[2].length;
-        return Promise.all([clear('text'), clear('img'), clear('added')]).then(function () { if (n && !FRAME) setTimeout(function () { toast('The test site was updated, so ' + n + ' older unsaved edits in this browser were cleared.', 8000); }, 600); });
-      });
+      /* 13 Nov 2026: the home page gained a cover section at the top, so pictures added there move down one section */
+      if (prev === 'cb543068b1') return all('added').then(function (r) { return Promise.all(r.filter(function (a) { return a.page === '/test/'; }).map(function (a) { a.s += 1; return put('added', a.id, a); })); });
     }).then(function () { return Promise.all([all('text'), all('img'), all('added')]); }).then(function (r) {
-      r[0].forEach(function (t) { if (t.page !== PAGE) return; var n = document.querySelector('main [data-e="' + t.e + '"]'); if (n) { n.innerHTML = t.after; n.classList.add('me-changed'); } });
+      /* text edits are matched to their block by its original content, so they survive a site update */
+      var mine = r[0].filter(function (t) { return t.page === PAGE; }), lost = 0, keep = [], jobs = [];
+      mine.forEach(function (t) {
+        var old = t.e;
+        if (ORIG[t.e] !== t.before) {
+          var hits = Object.keys(ORIG).filter(function (k) { return ORIG[k] === t.before; });
+          t.e = hits.length === 1 ? +hits[0] : -1;
+        }
+        if (t.e !== old) jobs.push(del('text', tkey(old)));
+        if (t.e < 0) lost++; else keep.push(t);
+      });
+      Promise.all(jobs).then(function () { keep.forEach(function (t) { put('text', tkey(t.e), t); }); if (jobs.length) recount(); });
+      keep.forEach(function (t) { var n = document.querySelector('main [data-e="' + t.e + '"]'); if (n) { n.innerHTML = t.after; n.classList.add('me-changed'); } });
+      if (lost && !FRAME) setTimeout(function () { toast(lost + (lost === 1 ? ' unsaved text edit' : ' unsaved text edits') + ' on this page could not be kept, because that text was changed on the site.', 8000); }, 600);
+      r[0] = r[0].filter(function (t) { return t.page !== PAGE || t.e >= 0; });
       if (!FRAME) { wireSlots(); wireAdd(); }
       r[1].forEach(function (i) { [].forEach.call(document.querySelectorAll('figure[data-slot="' + i.slot + '"]'), function (f) { fillSlot(f, i); }); });
       r[2].forEach(function (a) { if (a.page === PAGE) showAdded(a); });
