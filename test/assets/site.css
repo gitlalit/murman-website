@@ -556,3 +556,24 @@ body:not(.show-slots) .photos:not(:has(img)){display:none}
 @media (max-width:560px){
   .cover-img{aspect-ratio:4/3}
 }
+
+/* ---------- visual slots: page heads, bands, route and side pictures ---------- */
+.page-hero .ph-pic{display:none}
+.page-hero .ph:has(.ph-pic img),.show-slots .page-hero .ph{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s7);align-items:center}
+.page-hero .ph:has(.ph-pic img) .ph-pic,.show-slots .page-hero .ph-pic{display:block}
+.ph-pic .slot,.ph-pic .shot img{aspect-ratio:4/3}
+.band{margin-bottom:var(--s7)}
+.band .slot,.band .shot img{aspect-ratio:21/9}
+.route-pic{margin-bottom:var(--s4)}
+.route-pic .slot,.route-pic .shot img{aspect-ratio:3/2}
+.aside-pic{margin-block:var(--s5)}
+.aside-pic .slot,.aside-pic .shot img{aspect-ratio:16/10}
+.portrait{grid-column:1/-1;max-width:13rem;margin-bottom:var(--s5)}
+.portrait .slot,.portrait .shot img{aspect-ratio:4/5}
+:is(.ph-pic,.band,.route-pic,.aside-pic,.portrait) .shot img{object-fit:cover}
+.person:has(.portrait img) .shield{display:none}
+.person:has(.portrait img)>div:last-child{grid-column:1/-1}
+body:not(.show-slots) :is(.band,.route-pic,.aside-pic,.portrait):not(:has(img)){display:none}
+body:not(.show-slots) .sec.pics:not(:has(img)){display:none}
+.sec.pics{padding-top:0}
+@media (max-width:900px){.page-hero .ph:has(.ph-pic img),.show-slots .page-hero .ph{grid-template-columns:minmax(0,1fr);gap:var(--s6)}}

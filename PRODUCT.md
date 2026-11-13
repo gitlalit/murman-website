@@ -44,3 +44,13 @@ Projects and client logos come from that company profile and must be labelled as
 
 ## Services (from 9 Nov 2026)
 Four bundles only: Green certification and incentives; Low-carbon materials and value engineering; Environmental compliance on site; Execution and quality. The old names (YIELD, SIGHT, MIX, ASSURE, TRUE, CAPITAL, LEDGER, ROOTS) are retired on the site. Do not name individual co-founders other than Murarilal Kumawat on the site.
+
+## Brand and site structure (13 November 2026)
+- **Line:** Built like a banyan. **Descriptor:** Cooler, lower-carbon commercial buildings.
+- **Three promises:** Cool (roof cooling, shading, envelope). Renewed, not replaced (retrofit, circular fit-out, low-carbon materials). Made to last (whole-life design, clean construction, performance checked in use).
+- **Five services:** near-zero emission design and green building certification; low-carbon, circular fit-out and finishing; low-carbon materials and circularity; clean construction and environmental compliance; operational performance and retrofit.
+- **Vocabulary:** follow UNEP and GlobalABC terms (near-zero emission and resilient building, whole-life carbon, embodied and operational carbon, circular economy, retrofit, adaptation and mitigation). Explain each once in plain words.
+- **Prices:** never shown. Say "quoted on scope".
+- **Pages:** /, /services/ and five service pages, /roof-cooling/, /retrofit/, /why-green/, /about/, /contact/, /privacy/, /tools/green-fsi/.
+- **Creative slots:** `<figure class="slot" data-slot="W-xx">` stays hidden on the live site until replaced by an `<img>`.
+- Murman has not yet delivered a green certification. Say so where the record is described.
